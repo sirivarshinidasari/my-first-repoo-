@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DevOps Lifecycle</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 40px;
+      background-color: #f4f4f4;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+    }
+
+    svg {
+      width: 100%;
+      max-width: 900px;
+      height: auto;
+    }
+
+    .stage {
+      font-size: 14px;
+      font-weight: bold;
+      fill: #fff;
+    }
+
+    .circle {
+      fill: #007acc;
+      stroke: #fff;
+      stroke-width: 2;
+    }
+
+    .arrow {
+      fill: none;
+      stroke: #444;
+      stroke-width: 2;
+      marker-end: url(#arrowhead);
+    }
+  </style>
+</head>
+<body>
+  <h1>DevOps Lifecycle</h1>
+
+  <svg viewBox="0 0 1000 500">
+    <defs>
+      <marker id="arrowhead" markerWidth="10" markerHeight="7" 
+              refX="10" refY="3.5" orient="auto">
+        <polygon points="0 0, 10 3.5, 0 7" fill="#444" />
+      </marker>
+    </defs>
+
+    <!-- Circles for stages -->
+    <circle class="circle" cx="500" cy="100" r="50" />
+    <text class="stage" x="500" y="105" text-anchor="middle">Plan</text>
+
+    <circle class="circle" cx="700" cy="180" r="50" />
+    <text class="stage" x="700" y="185" text-anchor="middle">Develop</text>
+
+    <circle class="circle" cx="800" cy="320" r="50" />
+    <text class="stage" x="800" y="325" text-anchor="middle">Build</text>
+
+    <circle class="circle" cx="700" cy="460" r="50" />
+    <text class="stage" x="700" y="465" text-anchor="middle">Test</text>
+
+    <circle class="circle" cx="500" cy="540" r="50" />
+    <text class="stage" x="500" y="545" text-anchor="middle">Release</text>
+
+    <circle class="circle" cx="300" cy="460" r="50" />
+    <text class="stage" x="300" y="465" text-anchor="middle">Deploy</text>
+
+    <circle class="circle" cx="200" cy="320" r="50" />
+    <text class="stage" x="200" y="325" text-anchor="middle">Operate</text>
+
+    <circle class="circle" cx="300" cy="180" r="50" />
+    <text class="stage" x="300" y="185" text-anchor="middle">Monitor</text>
+
+    <!-- Arrows -->
+    <line class="arrow" x1="545" y1="110" x2="660" y2="165" />
+    <line class="arrow" x1="745" y1="195" x2="780" y2="290" />
+    <line class="arrow" x1="785" y1="355" x2="715" y2="430" />
+    <line class="arrow" x1="670" y1="495" x2="545" y2="525" />
+    <line class="arrow" x1="455" y1="535" x2="340" y2="485" />
+    <line class="arrow" x1="255" y1="440" x2="220" y2="355" />
+    <line class="arrow" x1="215" y1="285" x2="285" y2="210" />
+    <line class="arrow" x1="340" y1="165" x2="455" y2="110" />
+  </svg>
+
+  <p>This diagram shows the continuous flow of the DevOps lifecycle stages in a loop.</p>
+</body>
+</html>
